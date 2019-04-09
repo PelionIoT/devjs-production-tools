@@ -133,7 +133,7 @@ var overrides = {};
  * Override file shold be of format:
  * {
  *     
- *        "devjs-globalloger": "https://github.com/WigWagCo/devjs-globallogger.git",
+ *        "devjs-globalloger": "https://github.com/armPelionEdge/devjs-globallogger.git",
  *       "babel-core": "^6.14.0"
  *
  * }
