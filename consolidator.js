@@ -175,7 +175,9 @@ for (var n=0;n<dirs.length;n++) {
     var json = null;
     var obj = null;
     try {
-        json = fs.readFileSync(fname, 'utf8');
+        if(fs.existsSync(fname)) {
+            json = fs.readFileSync(fname, 'utf8');
+        }
     } catch(e) {
         log_err("Error reading:",fname);
         log_err("  Details: " + util.inspect(e));
